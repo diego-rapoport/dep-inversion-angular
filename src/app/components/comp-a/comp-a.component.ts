@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ServAService } from '../../services/serv-a.service';
 import { BoxComponent } from '../box/box.component';
 import { Contrato } from '../../interfaces/contrato';
@@ -14,20 +14,12 @@ import { JsonPipe } from '@angular/common';
   providers: [
     {
       provide: Contrato,
-      useClass: ServAService,
+      useClass: ServAService<ModelA>,
     }
   ]
 })
-export class CompAComponent implements OnInit {
+export class CompAComponent {
 
-  dataA: ModelA = {} as ModelA
-
-  constructor(private service: ServAService<ModelA>) { }
-
-  ngOnInit(): void {
-    this.service.query().subscribe((data) => {
-      this.dataA = data
-    })
-  }
+  constructor() { }
 
 }

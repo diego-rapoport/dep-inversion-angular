@@ -3,6 +3,7 @@ import { Contrato } from '../../interfaces/contrato';
 import { ServBService } from '../../services/serv-b.service';
 import { JsonPipe } from '@angular/common';
 import { BoxComponent } from '../box/box.component';
+import { ModelB } from '../../models/modelB';
 
 @Component({
   selector: 'app-comp-b',
@@ -13,7 +14,7 @@ import { BoxComponent } from '../box/box.component';
   providers: [
     {
       provide: Contrato,
-      useClass: ServBService,
+      useClass: ServBService<ModelB>,
     }
   ]
 })
