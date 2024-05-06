@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Contrato } from '../../interfaces/contrato';
+import { Contract } from '../../interfaces/contrato';
 import { JsonPipe } from '@angular/common';
 
 @Component({
@@ -12,7 +12,7 @@ import { JsonPipe } from '@angular/common';
 export class BoxComponent<T> implements OnInit {
 
   data: T = {} as T
-  serv = inject(Contrato<T>)
+  serv = inject(Contract<T>)
 
   ngOnInit(): void {
     this.serv.query().subscribe((data) => {

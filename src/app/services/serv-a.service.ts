@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Contrato } from '../interfaces/contrato';
+import { Contract } from '../interfaces/contrato';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServAService<ModelA> implements Contrato<ModelA>{
+export class ServAService<ModelA> implements Contract<ModelA>{
 
   constructor() { }
 
     query(): Observable<ModelA> {
       const teste: ModelA = {
-        nome: "A",
-        cpf: '00000000',
-        rua: 'Rua 123 OK'
+        name: "Jane Fondue",
+        info: 'Singer and Model',
+        email: 'fondue_j@gmail.com'
       } as ModelA
 
       return of<ModelA>(teste)

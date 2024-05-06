@@ -1,5 +1,5 @@
 export type ModelA = {
-  nome: string,
-  cpf: string
-  rua: string
+  name: string,
+  info: string
+  email: string
 }

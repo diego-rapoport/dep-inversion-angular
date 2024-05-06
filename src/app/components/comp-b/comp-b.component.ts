@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Contrato } from '../../interfaces/contrato';
+import { Contract } from '../../interfaces/contrato';
 import { ServBService } from '../../services/serv-b.service';
 import { JsonPipe } from '@angular/common';
 import { BoxComponent } from '../box/box.component';
@@ -13,7 +13,7 @@ import { ModelB } from '../../models/modelB';
   styleUrl: './comp-b.component.scss',
   providers: [
     {
-      provide: Contrato,
+      provide: Contract,
       useClass: ServBService<ModelB>,
     }
   ]

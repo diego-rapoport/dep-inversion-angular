@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ServAService } from '../../services/serv-a.service';
 import { BoxComponent } from '../box/box.component';
-import { Contrato } from '../../interfaces/contrato';
+import { Contract } from '../../interfaces/contrato';
 import { ModelA } from '../../models/modelA';
 import { JsonPipe } from '@angular/common';
 
@@ -13,7 +13,7 @@ import { JsonPipe } from '@angular/common';
   styleUrl: './comp-a.component.scss',
   providers: [
     {
-      provide: Contrato,
+      provide: Contract,
       useClass: ServAService<ModelA>,
     }
   ]
