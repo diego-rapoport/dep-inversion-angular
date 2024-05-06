@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Contract } from '../interfaces/contrato';
 import { Observable, of } from 'rxjs';
+import { Contract } from '../interfaces/contract';
 
 @Injectable({
   providedIn: 'root'

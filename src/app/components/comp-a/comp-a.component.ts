@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { ServAService } from '../../services/serv-a.service';
 import { BoxComponent } from '../box/box.component';
-import { Contract } from '../../interfaces/contrato';
 import { ModelA } from '../../models/modelA';
 import { JsonPipe } from '@angular/common';
+import { Contract } from '../../interfaces/contract';
 
 @Component({
   selector: 'app-comp-a',

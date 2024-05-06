@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Contract } from '../../interfaces/contrato';
 import { JsonPipe } from '@angular/common';
+import { Contract } from '../../interfaces/contract';
 
 @Component({
   selector: 'app-box',
